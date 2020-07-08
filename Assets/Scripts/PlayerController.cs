@@ -50,6 +50,6 @@ public class PlayerController : MonoBehaviour
             Mathf.Clamp(rb.position.z, boundary.zMin, boundary.zMax)
         );
 
-        rb.rotation = Quaternion.Euler(rb.velocity.z * tilt, 0.0f, rb.velocity.x * -tilt);
+        rb.rotation = Quaternion.Euler(0.0f, 0.0f, rb.velocity.x * -tilt);
     }
 }
